@@ -25,7 +25,7 @@ _gotoOverworld()->(
         if
         (query(plr, 'dimension')=='the_nether',
             (
-                run('execute in overworld run tp '+plr+' '+round(query(plr,'x')/8)+' '+round(query(plr,'y'))+' '+round(query(plr,'z')/8)+'');
+                run('execute in overworld run tp '+plr+' '+round(query(plr,'x')*8)+' '+round(query(plr,'y'))+' '+round(query(plr,'z')*8)+'');
             ),
             _error2();
         );,
@@ -40,7 +40,7 @@ _gotoNether()->(
         if
         (query(plr, 'dimension')=='overworld',
             (
-                run('execute in the_nether run tp '+plr+' '+round(query(plr,'x')*8)+' '+round(query(plr,'y'))+' '+round(query(plr,'z')*8)+'');
+                run('execute in the_nether run tp '+plr+' '+round(query(plr,'x')/8)+' '+round(query(plr,'y'))+' '+round(query(plr,'z')/8)+'');
             ),
             _error2();
         );,
