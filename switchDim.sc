@@ -1,3 +1,5 @@
+global 
+
 __config() -> {
     'stay_loaded' -> true,
     'commands' -> {
